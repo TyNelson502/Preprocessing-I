@@ -56,4 +56,90 @@ table {
 html, body {
     height: 100%;
 }
-
+/*reset end*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:700&display=swap');
+@headersize: 18pt;
+@sentencesize: 12pt;
+body{
+	border: 1.3rem solid;
+	border-color: #f9f8ec #f4ece7;
+	font-family: 'Merriweather', sans-serif;
+}
+.directory{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	a{	font-family: 'Merriweather', sans-serif;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 14pt;
+		color: black;
+}
+}
+	
+.logo{
+	width: 200px;
+}
+.container{
+	/*background-color: grey;*/
+	/*height: 77%;*/
+}
+.about{
+	/*display: flex;
+	flex-direction: column;
+	align-items: center;*/
+	h2{
+		font-size: @headersize;
+	}
+	p{
+		font-size: @sentencesize;
+	}
+	
+}
+.wrapper{
+	display:flex;
+	justify-content: space-evenly;
+	h2{
+		font-size: @headersize;
+		flex-direction: column;
+		text-align: center;
+	}
+	ul{
+		text-align: center;
+		font-size: 14pt;
+	}
+	p{
+		font-size: @sentencesize;
+	}
+}
+.experience{
+	h2{
+		font-size: @headersize;
+}
+table{
+	border-collapse: collapse;
+}
+	th{
+		font-family: 'Merriweather Sans', sans-serif;
+}
+	td{
+		font-family: 'Merriweather', sans-serif;
+	}
+	th,td{
+		font-size: @sentencesize;
+		border: 1px solid black;
+	}
+}
+#sales{
+	text-decoration: none;
+	color: black;
+}
+.copyright{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: rgba(158, 143, 116, 0.938);
+	font-size: @headersize;
+}
