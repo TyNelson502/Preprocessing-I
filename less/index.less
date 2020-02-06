@@ -82,20 +82,28 @@ body{
 	width: 200px;
 }
 .container{
-	/*background-color: grey;*/
-	/*height: 77%;*/
-}
-.about{
-	/*display: flex;
-	flex-direction: column;
-	align-items: center;*/
 	h2{
+		display: flex;
+		justify-content: center;
 		font-size: @headersize;
 	}
+}
+.about{
+	.directory();
 	p{
 		font-size: @sentencesize;
+		margin: 0 12rem;
+		text-align: center;
 	}
-	
+	img{
+		margin-left: 10rem;
+	}
+	a{
+		margin-right: 10rem;
+		text-decoration: none;
+		color: black;
+		text-align: center;
+	}
 }
 .wrapper{
 	display:flex;
@@ -135,11 +143,17 @@ table{
 	text-decoration: none;
 	color: black;
 }
+.contact{
+	text-align: center;
+	flex-direction: column;
+	.directory();
+	margin-top: 3rem;
+	font-size: @headersize;
+}
 .copyright{
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	color: white;
 	background-color: rgba(158, 143, 116, 0.938);
 	font-size: @headersize;
+	position: relative;
+	align-content: stretch;
 }
