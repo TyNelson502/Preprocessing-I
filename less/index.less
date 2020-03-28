@@ -56,4 +56,141 @@ table {
 html, body {
     height: 100%;
 }
-
+/*reset end*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:700&display=swap');
+@headersize: 18pt;
+@sentencesize: 12pt;
+body{
+	border: 1.3rem solid;
+	border-color: #f9f8ec #f4ece7;
+	font-family: 'Merriweather', sans-serif;
+}
+.directory{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	a{	font-family: 'Merriweather', sans-serif;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 14pt;
+		color: black;
+}
+}
+	
+.logo{
+	width: 200px;
+}
+.container{
+	h2{
+		display: flex;
+		justify-content: center;
+		font-size: @headersize;
+	}
+}
+.about{
+	.directory();
+	p{
+		font-size: @sentencesize;
+		margin: 0 12rem;
+		text-align: center;
+	}
+	img{
+		margin-left: 10rem;
+	}
+	a{
+		margin-right: 10rem;
+		text-decoration: none;
+		color: black;
+		text-align: center;
+	}
+}
+.wrapper{
+	display:flex;
+	justify-content: space-evenly;
+	h2{
+		font-size: @headersize;
+		flex-direction: column;
+		text-align: center;
+	}
+	ul{
+		text-align: center;
+		font-size: 14pt;
+	}
+	p{
+		font-size: @sentencesize;
+	}
+}
+.experience{
+	h2{
+		font-size: @headersize;
+}
+table{
+	border-collapse: collapse;
+}
+	th{
+		font-family: 'Merriweather Sans', sans-serif;
+}
+	td{
+		font-family: 'Merriweather', sans-serif;
+	}
+	th,td{
+		font-size: @sentencesize;
+		border: 1px solid black;
+	}
+}
+#sales{
+	text-decoration: none;
+	color: black;
+}
+.contact{
+	text-align: center;
+	flex-direction: column;
+	.directory();
+	margin-top: 1rem;
+	font-size: @headersize;
+}
+.copyright{
+	color: white;
+	background-color: rgba(158, 143, 116, 0.938);
+	font-size: @headersize;
+}
+@media only screen and (max-width: 500px){
+	body{
+		border: none;
+	}
+	.directory{
+		flex-direction: column;
+		align-items: center;
+		a{
+			border-top: 1px solid black;
+			margin: 0;
+			padding: 1em 100%;
+			text-align: center;
+		}
+		.forborder{
+			border-bottom: 1px solid black;
+			}
+	}
+	.container{
+		h2{
+			margin: 2rem 0;
+		}
+	}
+	.about{
+		flex-direction: column;
+			img{
+				margin-right: 10rem;
+			}
+			p{
+				margin-top: 2rem;
+			}
+			a{
+				margin-top: 2rem;
+				margin-left: 10rem;
+			}
+	}
+	.wrapper{
+		flex-direction: column;
+	}
+}	

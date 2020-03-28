@@ -1,1 +1,297 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/*reset end*/
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Merriweather Sans Bold'), local('MerriweatherSans-Bold'), url(https://fonts.gstatic.com/s/merriweathersans/v11/2-c49IRs1JiJN1FRAMjTN5zd9vgsFH1OZyDE0hM.ttf) format('truetype');
+}
+body {
+  border: 1.3rem solid;
+  border-color: #f9f8ec #f4ece7;
+  font-family: 'Merriweather', sans-serif;
+}
+.directory {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.directory a {
+  font-family: 'Merriweather', sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14pt;
+  color: black;
+}
+.logo {
+  width: 200px;
+}
+.container h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 18pt;
+}
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about a {
+  font-family: 'Merriweather', sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14pt;
+  color: black;
+}
+.about p {
+  font-size: 12pt;
+  margin: 0 12rem;
+  text-align: center;
+}
+.about img {
+  margin-left: 10rem;
+}
+.about a {
+  margin-right: 10rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper h2 {
+  font-size: 18pt;
+  flex-direction: column;
+  text-align: center;
+}
+.wrapper ul {
+  text-align: center;
+  font-size: 14pt;
+}
+.wrapper p {
+  font-size: 12pt;
+}
+.experience h2 {
+  font-size: 18pt;
+}
+.experience table {
+  border-collapse: collapse;
+}
+.experience th {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+.experience td {
+  font-family: 'Merriweather', sans-serif;
+}
+.experience th,
+.experience td {
+  font-size: 12pt;
+  border: 1px solid black;
+}
+#sales {
+  text-decoration: none;
+  color: black;
+}
+.contact {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 18pt;
+}
+.contact a {
+  font-family: 'Merriweather', sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14pt;
+  color: black;
+}
+.copyright {
+  color: white;
+  background-color: rgba(158, 143, 116, 0.938);
+  font-size: 18pt;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    border: none;
+  }
+  .directory {
+    flex-direction: column;
+    align-items: center;
+  }
+  .directory a {
+    border-top: 1px solid black;
+    margin: 0;
+    padding: 1em 100%;
+    text-align: center;
+  }
+  .directory .forborder {
+    border-bottom: 1px solid black;
+  }
+  .container h2 {
+    margin: 2rem 0;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about img {
+    margin-right: 10rem;
+  }
+  .about p {
+    margin-top: 2rem;
+  }
+  .about a {
+    margin-top: 2rem;
+    margin-left: 10rem;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+}
